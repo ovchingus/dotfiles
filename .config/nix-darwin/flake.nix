@@ -63,7 +63,7 @@
       system.defaults.finder.FXPreferredViewStyle = "clmv";
       system.defaults.dock.autohide = true;
       system.defaults.dock.orientation = "left";
-      system.defaults.dock.persistens-apps = [
+      system.defaults.dock.persistent-apps = [
           "/System/Applications/Mail.app"
           "/System/Applications/Calendar.app"
           "/System/Applications/Reminders.app"
