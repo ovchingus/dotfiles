@@ -16,6 +16,7 @@
       environment.systemPackages = [
         pkgs.neovim
         pkgs.stow
+        pkgs.nodejs_22
         pkgs.iterm2
         pkgs.google-chrome
         pkgs.telegram-desktop
@@ -60,6 +61,8 @@
       system.defaults.NSGlobalDomain.AppleShowAllFiles = true;
       system.defaults.NSGlobalDomain.InitialKeyRepeat = 25;
       system.defaults.NSGlobalDomain.KeyRepeat = 2;
+      system.defaults.finder.AppleShowAllExtensions = true;
+      system.defaults.finder.AppleShowAllFiles = true;
       system.defaults.finder.FXPreferredViewStyle = "clmv";
       system.defaults.dock.autohide = true;
       system.defaults.dock.orientation = "left";
@@ -70,7 +73,7 @@
           "/System/Applications/Notes.app"
           "/System/Applications/Music.app/"
           "${pkgs.google-chrome}/Applications/Google Chrome.app"
-          "${pkgs.telegram-desktop}/Applications/Telegram Desktop.app"
+          "${pkgs.telegram-desktop}/Applications/Telegram.app"
           "${pkgs.iterm2}/Applications/iTerm2.app"
         ];
     };
