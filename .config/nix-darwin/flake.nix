@@ -53,8 +53,24 @@
 
       services.jankyborders.enable = true;
       services.sketchybar.enable = true;
-      services.skhd.enable = true;
       services.yabai.enable = true;
+
+      services.skhd.enable = true;
+      services.skhd.skhdConfig = ''
+        # App shortcuts
+        alt - t : open -a "iTerm2"
+        # open command opens new window, so I used osascript
+        alt - b : osascript -e 'activate application "Google Chrome"'
+        alt - n : open -a "Notes"
+        alt - m : open -a "Music"
+        alt - c : open -a "Calendar"
+        alt - r : open -a "Reminders"
+        alt - k : open -a "Mail"
+      '';
+      # Workaround until https://github.com/koekeishiya/skhd/issues/342 solved
+      system.activationScripts.postActivation.text = ''
+        su - "$(logname)" -c '${pkgs.skhd}/bin/skhd -r'
+      '';
 
       system.defaults.NSGlobalDomain.ApplePressAndHoldEnabled = false;
       system.defaults.NSGlobalDomain.AppleShowAllExtensions = true;
