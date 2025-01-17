@@ -1,18 +1,31 @@
 { pkgs, ... }:
 {
+
+  # Homebrew configuration is temporal
+  # until nix repo is updating
+  homebrew.enable = true;
+  homebrew.casks = [
+    "ghostty"
+  ];
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
   environment.systemPackages = [
     pkgs.neovim
     pkgs.stow
     pkgs.nodejs_22
-    pkgs.iterm2
     pkgs.google-chrome
     pkgs.telegram-desktop
     pkgs.nerd-fonts.fira-code
     pkgs.karabiner-elements
     pkgs.raycast
     pkgs.blueutil
+    pkgs.starship
+
+    # cli tools
+    pkgs.fzf
+    pkgs.fd
+    pkgs.ripgrep
+    pkgs.bat
   ];
 
   nixpkgs.config.allowUnfree = true;
@@ -40,48 +53,11 @@
   services.jankyborders.width = 6.0;
   services.jankyborders.hidpi = false;
 
-  services.sketchybar.enable = true;
-  system.defaults.NSGlobalDomain._HIHideMenuBar = true;
-  services.sketchybar.config = ''
-    #!/usr/bin/env bash
+  # Sketchybar configuration also managed in .config/sketchybar/sketchybarrc
+  # TODO: use nix to apply sketchybar 
+  # services.sketchybar.enable = true;
+  # system.defaults.NSGlobalDomain._HIHideMenuBar = true;
 
-    # Define the aerospace plugin logic as a function
-    aerospace_plugin() {
-      local workspace="$1"
-      
-      if [ "$workspace" = "$FOCUSED_WORKSPACE"]; then
-        sketchybar --set "space.$workspace" background.drawing=on
-      else
-        sketchybar --set "space.$workspace" background.drawing=off
-      fi
-    }
-
-    # Add the event for workspace change
-    sketchybar --add event aerospace_workspace_change
-
-    # Iterate over all aerospace workspaces
-    for sid in $(aerospace list-workspaces --all); do
-      sketchybar --add item "space.$sid" left \
-        --subscribe "space.$sid" aerospace_workspace_change \
-        --set "space.$sid" \
-        background.color=0x44ffffff \
-        background.corner_radius=5 \
-        background.height=20 \
-        background.drawing=off \
-        label="$sid" \
-        click_script="aerospace workspace $sid" \
-        script="aerospace_plugin $sid"
-    done
-  '';
-
-
-  # Yabai configuration (options required for yabai to work)
-  # https://github.com/koekeishiya/yabai?tab=readme-ov-file#requirements-and-caveats
-  # services.yabai.enable = true;
-  # system.defaults.dock.mru-spaces = false;
-  # system.defaults.WindowManager.EnableStandardClickToShowDesktop = false;
-  # system.defaults.WindowManager.StandardHideDesktopIcons = false;
-  # system.defaults.finder.CreateDesktop = true;
   system.defaults.dock.expose-group-apps = true;
   system.defaults.spaces.spans-displays = true;
   system.defaults.NSGlobalDomain.NSAutomaticWindowAnimationsEnabled = false;
@@ -131,33 +107,17 @@
       alt-shift-f = "fullscreen";
     };
   };
-  services.aerospace.settings.on-window-detected = [
-    {
-      "if" = { app-id  = "com.googlecode.iterm2"; };
-      run = [ "move-node-to-workspace T" ];
-    } 
-  ];
-  services.aerospace.settings.exec-on-workspace-change = [
-    "/bin/bash"
-    "-c"
-    "sketchybar --trigger aerospace_workspace_change FOCUSED=$AEROSPACE_FOCUSED_WORKSPACE"
-  ];
-  # Skhd configuration
-  # services.skhd.enable = true;
-  # services.skhd.skhdConfig = ''
-  #   # App shortcuts
-  #   alt - t : open -a "iTerm2"
-  #   alt - b : open -a "Google Chrome"
-  #
-  #   # Yabai shortcuts
-  #   alt - h : yabai -m window --focus west
-  #   alt - j : yabai -m window --focus south
-  #   alt - k : yabai -m window --focus north
-  #   alt - l : yabai -m window --focus east
-  #   alt - f : yabai -m window --toggle zoom-fullscreen
-  #   alt - g : yabai -m window --toggle windowed-fullscreen
-  #   alt - v : yabai -m window --toggle split
-  # '';
+  # services.aerospace.settings.on-window-detected = [
+  #   {
+  #     "if" = { app-id  = "com.googlecode.iterm2"; };
+  #     run = [ "move-node-to-workspace T" ];
+  #   } 
+  # ];
+  # services.aerospace.settings.exec-on-workspace-change = [
+  #   "/bin/bash"
+  #   "-c"
+  #   "sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE"
+  # ];
 
   # Global settings
   system.defaults.NSGlobalDomain.ApplePressAndHoldEnabled = false;
@@ -178,7 +138,7 @@
     "/System/Applications/Music.app/"
     "${pkgs.google-chrome}/Applications/Google Chrome.app"
     "${pkgs.telegram-desktop}/Applications/Telegram.app"
-    "${pkgs.iterm2}/Applications/iTerm2.app"
+    "/Applications/Ghostty.app"
   ];
 }
 
