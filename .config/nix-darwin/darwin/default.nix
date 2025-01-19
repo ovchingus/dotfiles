@@ -1,31 +1,50 @@
 { pkgs, ... }:
 {
-
   # Homebrew configuration is temporal
   # until nix repo is updating
   homebrew.enable = true;
+  homebrew.onActivation.upgrade = true;
+  homebrew.onActivation.autoUpdate = true;
+  homebrew.onActivation.cleanup = "uninstall";
+  homebrew.taps = [ ];
+  homebrew.brews = [ ];
   homebrew.casks = [
     "ghostty"
+    "openscad"
+    "karabiner-elements"
+
+    # fonts
+    "sf-symbols"
+    "font-sf-pro"
+    "font-sf-mono"
   ];
+  
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
   environment.systemPackages = [
     pkgs.neovim
     pkgs.stow
-    pkgs.nodejs_22
     pkgs.google-chrome
     pkgs.telegram-desktop
-    pkgs.nerd-fonts.fira-code
-    pkgs.karabiner-elements
     pkgs.raycast
     pkgs.blueutil
     pkgs.starship
+
+    # languages
+    pkgs.python312Full
+    pkgs.nodejs_22
 
     # cli tools
     pkgs.fzf
     pkgs.fd
     pkgs.ripgrep
     pkgs.bat
+    pkgs.jq
+  ];
+
+  fonts.packages = [
+    pkgs.sketchybar-app-font
+    pkgs.nerd-fonts.fira-code
   ];
 
   nixpkgs.config.allowUnfree = true;
@@ -46,78 +65,41 @@
   programs.zsh.enable = true;
   programs.zsh.enableSyntaxHighlighting = true;
 
+  # Karabiner configuration also managed in ../../karabiner
+  # services.karabiner-elements.enable = true;
+
+  # JankyBorders configuration also managed in ../../borders
   services.jankyborders.enable = true;
-  services.jankyborders.active_color = "0xffe2e2e3";
-  services.jankyborders.inactive_color = "0xff414550";
-  services.jankyborders.style = "round";
-  services.jankyborders.width = 6.0;
-  services.jankyborders.hidpi = false;
 
-  # Sketchybar configuration also managed in .config/sketchybar/sketchybarrc
-  # TODO: use nix to apply sketchybar 
-  # services.sketchybar.enable = true;
-  # system.defaults.NSGlobalDomain._HIHideMenuBar = true;
+  # skhd configuration also managed in ../../skhd
+  services.skhd.enable = true;
 
-  system.defaults.dock.expose-group-apps = true;
-  system.defaults.spaces.spans-displays = true;
-  system.defaults.NSGlobalDomain.NSAutomaticWindowAnimationsEnabled = false;
-  services.aerospace.enable = true;
-  services.aerospace.settings = {
-    gaps = {
-      inner.horizontal = 10; 
-      inner.vertical =   10;
-      outer.left =       10;
-      outer.bottom =     10;
-      outer.top =        10;
-      outer.right =      10;
-    };
-    mode.main.binding = {
-      cmd-h = []; # Disable "hide application" systemwide macos shortcut
-      cmd-alt-h = []; # Disable "hide others" systemwide macos shortcut
+  # yabai configuration also managed in ../../yabai
+  services.yabai.enable = true;
+  system.defaults.spaces.spans-displays = false;
+  system.defaults.finder.CreateDesktop = true;
+  system.defaults.dock.mru-spaces = false;
+  system.defaults.WindowManager.StandardHideDesktopIcons = false;
+  system.defaults.WindowManager.EnableStandardClickToShowDesktop = false;
 
-      # See: https://nikitabobko.github.io/AeroSpace/commands#layout
-      alt-slash = "layout tiles horizontal vertical";
-      alt-comma = "layout accordion horizontal vertical";
+  # Sketchybar configuration also managed in ../../sketchybar
+  services.sketchybar.enable = true;
+  services.sketchybar.extraPackages = [
+    pkgs.lua5_4_compat  
+    pkgs.switchaudio-osx
+    pkgs.nowplaying-cli
+  ];
+  system.defaults.NSGlobalDomain._HIHideMenuBar = true;
+  system.activationScripts.applications.text = ''
+    echo "Installing sketchybar deps ..."
+    (git clone https://github.com/FelixKratz/SbarLua.git /tmp/SbarLua && cd /tmp/SbarLua/ && make install && rm -rf /tmp/SbarLua/)
+  '';
 
-      # See: https://nikitabobko.github.io/AeroSpace/commands#focus
-      alt-h = "focus left";
-      alt-j = "focus down";
-      alt-k = "focus up";
-      alt-l = "focus right";
-
-      # See: https://nikitabobko.github.io/AeroSpace/commands#move
-      alt-shift-h = "move left";
-      alt-shift-j = "move down";
-      alt-shift-k = "move up";
-      alt-shift-l = "move right";
-
-      alt-t = "workspace T"; # Terminal
-      alt-b = "workspace B"; # Browser
-      alt-g = "workspace G"; # Telegram
-      alt-y = "workspace Y"; # Mail / Calendar
-      alt-n = "workspace N"; # Notes / Reminders
-      # alt-f = "workspace F";
-      alt-shift-t = "move-node-to-workspace T"; 
-      alt-shift-b = "move-node-to-workspace B";
-      alt-shift-g = "move-node-to-workspace G";
-      alt-shift-y = "move-node-to-workspace Y";
-      alt-shift-n = "move-node-to-workspace N";
-      # alt-shift-f = "move-node-to-workspace F";
-
-      alt-shift-f = "fullscreen";
-    };
-  };
-  # services.aerospace.settings.on-window-detected = [
-  #   {
-  #     "if" = { app-id  = "com.googlecode.iterm2"; };
-  #     run = [ "move-node-to-workspace T" ];
-  #   } 
-  # ];
-  # services.aerospace.settings.exec-on-workspace-change = [
-  #   "/bin/bash"
-  #   "-c"
-  #   "sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE"
-  # ];
+  # AeroSpace configuration also managed in ../../aerospace
+  # services.aerospace.enable = true;
+  # system.defaults.dock.expose-group-apps = true;
+  # system.defaults.spaces.spans-displays = true;
+  # system.defaults.NSGlobalDomain.NSAutomaticWindowAnimationsEnabled = false;
 
   # Global settings
   system.defaults.NSGlobalDomain.ApplePressAndHoldEnabled = false;

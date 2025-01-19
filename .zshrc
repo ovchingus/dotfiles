@@ -98,3 +98,12 @@ _fzf_compgen_dir() {
 
 # ----- Bat (better cat) -----
 # export BAT_THEME=Dracula
+
+# Update sketchybar after brew package changes
+function brew() {
+  command brew "$@" 
+
+  if [[ $* =~ "upgrade" ]] || [[ $* =~ "update" ]] || [[ $* =~ "outdated" ]]; then
+    sketchybar --trigger brew_update
+  fi
+}
