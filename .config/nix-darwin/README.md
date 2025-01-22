@@ -1,31 +1,31 @@
-## nix
+# nix
 
 My nix config
 
-### How to install
+## How to install
 
 <!-- TODO -->
 
-1. Unlock root access for yabai https://github.com/koekeishiya/yabai/wiki/Disabling-System-Integrity-Protection
+1. Unlock root access for yabai <https://github.com/koekeishiya/yabai/wiki/Disabling-System-Integrity-Protection>
 
-### How to apply
+## How to apply
 
-Apply for **workstation** profile. Use readlink as my nix config direcroty is managed by stow as symlink.
+Apply for **spb-hq-nb-1355** profile. Use readlink as my nix config direcroty is managed by stow as symlink.
 
+```sh
+darwin-rebuild switch --flake "$(readlink -f ~/.config/nix-darwin)#spb-hq-nb-1355"
 ```
-darwin-rebuild switch --flake "$(readlink -f ~/.config/nix-darwin)#workstation"
-```
 
-### How to update
+## How to update
 
 First, update packages
 
-```
+```sh
 nix flake update
 ```
 
-Then apply for **workstation** profile
+Then apply for **spb-hq-nb-1355** profile
 
-```
-darwin-rebuild switch --flake "$(readlink -f ~/.config/nix-darwin)#workstation"
+```sh
+darwin-rebuild switch --flake "$(readlink -f ~/.config/nix-darwin)#spb-hq-nb-1355"
 ```

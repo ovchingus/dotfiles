@@ -6,12 +6,17 @@
   homebrew.onActivation.upgrade = true;
   homebrew.onActivation.autoUpdate = true;
   homebrew.onActivation.cleanup = "uninstall";
-  homebrew.taps = [ ];
-  homebrew.brews = [ ];
+  homebrew.taps = [
+  #   "koekeishiya/formulae"
+  ];
+  homebrew.brews = [
+    # "koekeishiya/formulae/yabai"
+  ];
   homebrew.casks = [
     "ghostty"
     "openscad"
     "karabiner-elements"
+    "google-chrome"
 
     # fonts
     "sf-symbols"
@@ -24,7 +29,6 @@
   environment.systemPackages = [
     pkgs.neovim
     pkgs.stow
-    pkgs.google-chrome
     pkgs.telegram-desktop
     pkgs.raycast
     pkgs.blueutil
@@ -65,17 +69,18 @@
   programs.zsh.enable = true;
   programs.zsh.enableSyntaxHighlighting = true;
 
-  # Karabiner configuration also managed in ../../karabiner
-  # services.karabiner-elements.enable = true;
-
-  # JankyBorders configuration also managed in ../../borders
   services.jankyborders.enable = true;
+  services.jankyborders.active_color = "0xffe2e2e3";
+  services.jankyborders.inactive_color = "0xff414550";
+  services.jankyborders.hidpi = false;
+  services.jankyborders.width = 6.0;
 
-  # skhd configuration also managed in ../../skhd
+  # skhd configuration managed in ../../skhd
   services.skhd.enable = true;
 
-  # yabai configuration also managed in ../../yabai
+  # yabai configuration managed with brew and ../../yabai
   services.yabai.enable = true;
+  services.yabai.enableScriptingAddition = true;
   system.defaults.spaces.spans-displays = false;
   system.defaults.finder.CreateDesktop = true;
   system.defaults.dock.mru-spaces = false;
@@ -91,8 +96,20 @@
   ];
   system.defaults.NSGlobalDomain._HIHideMenuBar = true;
   system.activationScripts.applications.text = ''
-    echo "Installing sketchybar deps ..."
+    echo "Installing 'sketchybar' depsendencies"
     (git clone https://github.com/FelixKratz/SbarLua.git /tmp/SbarLua && cd /tmp/SbarLua/ && make install && rm -rf /tmp/SbarLua/)
+
+    echo "Installing 'bat' themes"
+    # command to build custom themes from ../../bat/themes/ directory
+    bat cache --build
+
+    # TODO: automate it
+    # echo "Installing yabai sudo access"
+    # if [ -f "/private/etc/sudoers.d/yabai" ]; then
+    #   sudo sed -i "" -e 's/sha256:[[:alnum:]]*/sha256:"$(shasum -a 256 /opt/homebrew/bin/yabai | awk "{print \$1;}")"/' /private/etc/sudoers.d/yabai
+    # else
+    #   echo "sudoers file does not exist yet"
+    # fi
   '';
 
   # AeroSpace configuration also managed in ../../aerospace
@@ -118,7 +135,7 @@
     "/System/Applications/Reminders.app"
     "/System/Applications/Notes.app"
     "/System/Applications/Music.app/"
-    "${pkgs.google-chrome}/Applications/Google Chrome.app"
+    "/Applications/Google Chrome.app"
     "${pkgs.telegram-desktop}/Applications/Telegram.app"
     "/Applications/Ghostty.app"
   ];
