@@ -6,12 +6,8 @@
   homebrew.onActivation.upgrade = true;
   homebrew.onActivation.autoUpdate = true;
   homebrew.onActivation.cleanup = "uninstall";
-  homebrew.taps = [
-  #   "koekeishiya/formulae"
-  ];
-  homebrew.brews = [
-    # "koekeishiya/formulae/yabai"
-  ];
+  homebrew.taps = [ ];
+  homebrew.brews = [ ];
   homebrew.casks = [
     "ghostty"
     "openscad"
@@ -69,7 +65,7 @@
   programs.zsh.enable = true;
   programs.zsh.enableSyntaxHighlighting = true;
 
-  services.jankyborders.enable = true;
+  services.jankyborders.enable = false;
   services.jankyborders.active_color = "0xffe2e2e3";
   services.jankyborders.inactive_color = "0xff414550";
   services.jankyborders.hidpi = false;
