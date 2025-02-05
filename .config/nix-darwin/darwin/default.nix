@@ -7,7 +7,9 @@
   homebrew.onActivation.autoUpdate = true;
   homebrew.onActivation.cleanup = "uninstall";
   homebrew.taps = [ ];
-  homebrew.brews = [ ];
+  homebrew.brews = [
+    "tpm"
+  ];
   homebrew.casks = [
     "ghostty"
     "openscad"
@@ -19,7 +21,7 @@
     "font-sf-pro"
     "font-sf-mono"
   ];
-  
+
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
   environment.systemPackages = [
@@ -40,6 +42,7 @@
     pkgs.ripgrep
     pkgs.bat
     pkgs.jq
+    pkgs.tmux
   ];
 
   fonts.packages = [
@@ -86,7 +89,7 @@
   # Sketchybar configuration also managed in ../../sketchybar
   services.sketchybar.enable = true;
   services.sketchybar.extraPackages = [
-    pkgs.lua5_4_compat  
+    pkgs.lua5_4_compat
     pkgs.switchaudio-osx
     pkgs.nowplaying-cli
   ];
