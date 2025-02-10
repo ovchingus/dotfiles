@@ -40,9 +40,10 @@
     pkgs.fzf
     pkgs.fd
     pkgs.ripgrep
-    pkgs.bat
+    pkgs.bat # Text file preview tool
     pkgs.jq
     pkgs.tmux
+    pkgs.delta # Git diff preview tool
   ];
 
   fonts.packages = [
