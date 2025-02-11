@@ -1,4 +1,4 @@
 confirm-close-surface = true
 font-family = "Liga SFMono Nerd Font"
 font-size = 16
-theme = tokyonight_moon
+theme = Dracula

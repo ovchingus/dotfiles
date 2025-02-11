@@ -11,6 +11,6 @@
 [delta]
     navigate = true  # use n and N to move between diff sections
     line-numbers = true
-    syntax-theme = tokyonight_moon
+    syntax-theme = Dracula
 [merge]
     conflictstyle = zdiff3
