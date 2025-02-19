@@ -11,10 +11,16 @@
     "tpm"
   ];
   homebrew.casks = [
-    "ghostty"
+    {
+      name = "ghostty";
+      greedy = true; # always upgrade cask to latest version
+    }
+    {
+      name = "google-chrome";
+      greedy = true;
+    }
     "openscad"
     "karabiner-elements"
-    "google-chrome"
 
     # fonts
     "sf-symbols"
