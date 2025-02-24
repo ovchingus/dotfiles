@@ -1,36 +1,42 @@
 local colors = require("colors")
 local settings = require("settings")
 
-local function get_input_source_name()
-	-- Run defaults command and capture its output
-	local handle = io.popen("defaults read com.apple.HIToolbox.plist AppleCurrentKeyboardLayoutInputSourceID")
-	local source = handle:read("*a")
-	handle:close()
+local function get_input_source_name(callback)
+	sbar.exec("defaults read com.apple.HIToolbox.plist AppleCurrentKeyboardLayoutInputSourceID", function(source)
+		-- Remove trailing whitespace/newline
+		source = source:gsub("^%s*(.-)%s*$", "%1")
 
-	-- Remove trailing whitespace/newline
-	source = source:gsub("^%s*(.-)%s*$", "%1")
+		-- Map input sources to labels
+		local input_map = {
+			["com.apple.keylayout.ABC"] = "en",
+			["com.apple.keylayout.Russian"] = "ru",
+		}
 
-	-- Map input sources to labels
-	local input_map = {
-		["com.apple.keylayout.ABC"] = "en",
-		["com.apple.keylayout.Russian"] = "ru",
-	}
-
-	return input_map[source] or source
+		callback(input_map[source] or source)
+	end)
 end
 
 sbar.add("event", "system_lang_changed", "AppleSelectedInputSourcesChangedNotification")
 
 local lang = sbar.add("item", "widgets.lang", {
 	icon = { drawing = false },
-	label = get_input_source_name(),
+	label = "...",
 	position = "right",
 })
 
-lang:subscribe("system_lang_changed", function(_)
+-- Set the initial name when the script starts
+get_input_source_name(function(source_name)
 	lang:set({
-		label = get_input_source_name(),
+		label = source_name,
 	})
+end)
+
+lang:subscribe("system_lang_changed", function(_)
+	get_input_source_name(function(source_name)
+		lang:set({
+			label = source_name,
+		})
+	end)
 end)
 
 lang:subscribe("mouse.clicked", function(_)
