@@ -6,8 +6,15 @@
   homebrew.onActivation.upgrade = true;
   homebrew.onActivation.autoUpdate = true;
   homebrew.onActivation.cleanup = "uninstall";
-  homebrew.taps = [ ];
+  homebrew.taps = [
+    # "homebrew/services"
+    # "FelixKratz/formulae"
+  ];
   homebrew.brews = [
+    # {
+    #   name = "sketchybar";
+    #   restart_service = true;
+    # }
     "tpm"
   ];
   homebrew.casks = [
@@ -21,6 +28,7 @@
     }
     "openscad"
     "karabiner-elements"
+    # "nikitabobko/tap/aerospace"
 
     # fonts
     "sf-symbols"
@@ -82,16 +90,16 @@
   services.jankyborders.width = 6.0;
 
   # skhd configuration managed in ../../skhd
-  services.skhd.enable = true;
+  # services.skhd.enable = true;
 
   # yabai configuration managed with brew and ../../yabai
-  services.yabai.enable = true;
-  services.yabai.enableScriptingAddition = true;
-  system.defaults.spaces.spans-displays = false;
-  system.defaults.finder.CreateDesktop = true;
-  system.defaults.dock.mru-spaces = false;
-  system.defaults.WindowManager.StandardHideDesktopIcons = false;
-  system.defaults.WindowManager.EnableStandardClickToShowDesktop = false;
+  # services.yabai.enable = true;
+  # services.yabai.enableScriptingAddition = true;
+  # system.defaults.spaces.spans-displays = false;
+  # system.defaults.finder.CreateDesktop = true;
+  # system.defaults.dock.mru-spaces = false;
+  # system.defaults.WindowManager.StandardHideDesktopIcons = false;
+  # system.defaults.WindowManager.EnableStandardClickToShowDesktop = false;
 
   # Sketchybar configuration also managed in ../../sketchybar
   services.sketchybar.enable = true;
@@ -120,9 +128,9 @@
 
   # AeroSpace configuration also managed in ../../aerospace
   # services.aerospace.enable = true;
-  # system.defaults.dock.expose-group-apps = true;
-  # system.defaults.spaces.spans-displays = true;
-  # system.defaults.NSGlobalDomain.NSAutomaticWindowAnimationsEnabled = false;
+  system.defaults.dock.expose-group-apps = true;
+  system.defaults.spaces.spans-displays = true;
+  system.defaults.NSGlobalDomain.NSAutomaticWindowAnimationsEnabled = false;
 
   # Global settings
   system.defaults.NSGlobalDomain.ApplePressAndHoldEnabled = false;
@@ -146,4 +154,3 @@
     "/Applications/Ghostty.app"
   ];
 }
-

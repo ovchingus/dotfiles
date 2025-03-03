@@ -76,6 +76,9 @@ source $ZSH/oh-my-zsh.sh
 
 eval "$(starship init zsh)"
 
+# my env variables
+source .zshrc_env
+
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 

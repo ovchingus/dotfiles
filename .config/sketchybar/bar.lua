@@ -1,9 +1,13 @@
 local colors = require("colors")
+local settings = require("settings")
 
 -- Equivalent to the --bar domain
 sbar.bar({
-  height = 40,
-  color = colors.bar.bg,
-  padding_right = 2,
-  padding_left = 2,
+    color = colors.bar.bg,
+    height = settings.height,
+    padding_right = 3,
+    padding_left = 3,
+    sticky = 'on',
+    topmost = 'window',
+    y_offset = 4,
 })

@@ -21,6 +21,7 @@ Required packages:
 
 - git
 - stow
+- brew
 
 1. Clone `dotfiles` directory to your user home directory.
 
@@ -85,3 +86,47 @@ because nix-darwin configuration contains following code:
   homebrew.onActivation.cleanup = "uninstall";
 }
 ```
+
+
+## MacOS settings
+
+I also changed a few settings in MacOS because the defaults interfere with this config
+
+### make Dock and the native MacOS bar auto-hide  
+Desktop & Dock - Autohide Dock can be here somewhere  
+Control Center - Enable menu bar autohide here  
+
+Hide Dock via cli:  
+`defaults write com.apple.dock autohide -bool true && killall Dock`  
+
+Make it only appear if you float over it with the mouse for 10 seconds (use 4 fingers up gesture to make it appear)  
+`defaults write com.apple.dock autohide-delay -float 10000 && killall Dock`
+
+### disable Dock bouncing of apps
+`defaults write com.apple.dock no-bouncing -bool TRUE && killall Dock`  
+
+
+### disable desktop icons
+having desktop icons is not very user-friendly together with tiling window managers and, be honest, it is cluttered most of the time anyways so it is recommended to disable them in "Desktop & Dock"  
+
+### disable window animations
+Run in terminal:  
+`defaults write -g NSAutomaticWindowAnimationsEnabled -bool false`
+
+### reduce motion (for native fullscreen functionality and maybe some more unnecessary animations)
+- System Preferences > Accessibility > Display > Reduce motion
+
+### disable lots of MacOS keyboard shortcuts in the MacOS settings
+- disable command+Q in MacOS system settings
+- be ready to disable a few more, as I am unsure about what other shortcuts might collide
+
+### Move windows by dragging any part of the window (by holding ctrl+cmd)
+Run in terminal:  
+`defaults write -g NSWindowShouldDragOnGesture -bool true`
+
+### Displays have separate Spaces
+Enable this in MacOS settings "Desktop & dock" or else Sketchybar will not start. In general Aerospace recommends disabling this though.  
+Read about it here: https://nikitabobko.github.io/AeroSpace/guide#a-note-on-displays-have-separate-spaces  
+
+Sketchybar might work with the option being disabled in the future.  
+https://github.com/FelixKratz/SketchyBar/issues/495
