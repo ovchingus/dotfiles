@@ -67,7 +67,7 @@ inner.horizontal = 5
 inner.vertical =   5
 outer.left =       5
 outer.bottom =     5
-outer.top = [{ monitor.main = 5 }, 40]
+outer.top = [{ monitor.main = 8 }, 40]
 outer.right =      5
 
 # 'main' binding mode declaration
@@ -172,3 +172,10 @@ run = ['move-node-to-workspace 6']
 if.app-id = 'chat.apple.mail'
 run = ['move-node-to-workspace 6']
 
+## Workspace 8 for vpn and vault
+[[on-window-detected]]
+if.app-id = 'dev.yiguo.FoXray'
+run = ['move-node-to-workspace 8']
+[[on-window-detected]]
+if.app-id = 'com.bitwarden.desktop'
+run = ['move-node-to-workspace 8']
