@@ -70,10 +70,20 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git tmux)
+plugins=(
+  git
+  tmux
+  zsh-syntax-highlighting
+)
+
+# Brew autocomplete
+eval "$(brew shellenv)"
+autoload -Uz compinit
+compinit
 
 source $ZSH/oh-my-zsh.sh
 
+# Starship cli init
 eval "$(starship init zsh)"
 
 # Set up fzf key bindings and fuzzy completion
@@ -100,3 +110,12 @@ _fzf_compgen_dir() {
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+# BasicTex cli init
+eval "$(/usr/libexec/path_helper)"
+
+PATH="/Users/spb-hq-nb-1355/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/Users/spb-hq-nb-1355/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/Users/spb-hq-nb-1355/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/Users/spb-hq-nb-1355/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/spb-hq-nb-1355/perl5"; export PERL_MM_OPT;
