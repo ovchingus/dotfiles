@@ -7,15 +7,27 @@
 // custom settings, run the `zed: Open Default Settings` command
 // from the command palette
 {
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000
+    }
+  },
+  "auto_install_extensions": {
+    "html": true,
+    "scss": true,
+    "dockerfile": true,
+    "latex": true,
+    "graphql": true
+  },
   "assistant": {
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-3-5-sonnet-latest"
+      "model": "claude-3-7-sonnet-latest"
     },
     "version": "2"
   },
   // "autosave": "on_focus_change",
-  "buffer_font_family": "Fira Code",
+  "buffer_font_family": "Hack Nerd Font Mono",
   "buffer_font_features": {
     "calt": false
   },
@@ -49,7 +61,7 @@
   },
 
   "features": {
-    "inline_completion_provider": "supermaven"
+    "edit_prediction_provider": "zed"
   },
   "ui_font_features": {
     "calt": false
