@@ -1,17 +1,48 @@
 {
+  /*
+   * Base config
+   */
   "editor.fontSize": 14,
   "editor.lineNumbers": "relative",
-  "window.zoomLevel": 0.5,
-  "files.autoSave": "afterDelay",
+  "editor.cursorBlinking": "solid",
+  "editor.scrollBeyondLastLine": false,
+  "editor.fontFamily": "'FiraCode Nerd Font', Menlo, Monaco, 'Courier New', monospace",
   "editor.tabSize": 2,
   "editor.inlineSuggest.suppressSuggestions": true,
   "editor.lightbulb.enabled": "off",
+  "editor.minimap.enabled": false,
+  "files.autoSave": "afterDelay",
+  "window.titleBarStyle": "native",
+  "window.zoomLevel": 0.5,
+  "window.customTitleBarVisibility": "never",
+  "window.newWindowProfile": "Default",
+  "terminal.integrated.fontSize": 14,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "explorer.decorations.badges": false,
+  "workbench.activityBar.location": "hidden",
+  "workbench.colorTheme": "Default Light Modern",
+  "workbench.tree.indent": 12,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.iconTheme": "material-icon-theme",
+
+  /*
+   * Cursor
+   */
+  "cursor.cpp.disabledLanguages": ["plaintext"],
+
+  /*
+   * cSpell
+   */
+  "cSpell.language": "en,ru",
+  "cSpell.userWords": ["esbenp", "hlsearch", "Menlo", "Monaspace", "Ovechkin"],
+
+  /*
+   * Languages
+   */
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
-  },
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "always"
   },
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -21,27 +52,22 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
-  "editor.minimap.enabled": false,
-  "cSpell.language": "en,ru",
-  "window.titleBarStyle": "native",
-  /**
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+
+  /*
    * Vim setup
    */
   "vim.hlsearch": true,
   "vim.useSystemClipboard": true,
   "vim.leader": "space",
-  "vim.statusBarColorControl": true,
-  "vim.statusBarColors.normal": ["#8FBCBB", "#434C5E"],
-  "vim.statusBarColors.insert": "#BF616A",
-  "vim.statusBarColors.visual": "#B48EAD",
-  "vim.statusBarColors.visualline": "#B48EAD",
-  "vim.statusBarColors.visualblock": "#A3BE8C",
-  "vim.statusBarColors.replace": "#D08770",
-  "vim.statusBarColors.commandlineinprogress": "#007ACC",
-  "vim.statusBarColors.searchinprogressmode": "#007ACC",
-  "vim.statusBarColors.easymotionmode": "#007ACC",
-  "vim.statusBarColors.easymotioninputmode": "#007ACC",
-  "vim.statusBarColors.surroundinputmode": "#007ACC",
   "vim.langmap": "ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz",
   "vim.normalModeKeyBindings": [
     {
@@ -110,38 +136,11 @@
       "commands": ["editor.action.smartSelect.shrink"]
     }
   ],
-  /**/
-  "explorer.confirmDragAndDrop": false,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "workbench.activityBar.location": "hidden",
-  "window.customTitleBarVisibility": "never",
-  "editor.cursorBlinking": "solid",
-  "cSpell.userWords": ["esbenp", "hlsearch", "Menlo", "Monaspace", "Ovechkin"],
-  "terminal.integrated.fontSize": 14,
-  "explorer.confirmDelete": false,
-  "cursor.cpp.disabledLanguages": ["plaintext"],
-  "[typescript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
-  "workbench.colorTheme": "Default Light Modern",
-  "explorer.decorations.badges": false,
-  "search.decorations.badges": false,
-  "workbench.tree.indent": 12,
-  "workbench.tree.renderIndentGuides": "always",
-  "workbench.iconTheme": "material-icon-theme",
+
+  /**
+   * Other addons
+   */
   "material-icon-theme.folders.theme": "classic",
   "material-icon-theme.hidesExplorerArrows": true,
-  "material-icon-theme.activeIconPack": "react",
-  "editor.scrollBeyondLastLine": false,
-  "editor.fontFamily": "'FiraCode Nerd Font', Menlo, Monaco, 'Courier New', monospace",
-  "workbench.colorCustomizations": {
-    "statusBar.background": "#8FBCBB",
-    "statusBar.noFolderBackground": "#8FBCBB",
-    "statusBar.debuggingBackground": "#8FBCBB",
-    "statusBar.foreground": "#434C5E",
-    "statusBar.debuggingForeground": "#434C5E"
-  },
-  "eslint.format.enable": true,
-  "window.newWindowProfile": "Default"
+  "material-icon-theme.activeIconPack": "react"
 }
