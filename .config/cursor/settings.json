@@ -11,6 +11,7 @@
   "editor.inlineSuggest.suppressSuggestions": true,
   "editor.lightbulb.enabled": "off",
   "editor.minimap.enabled": false,
+  "editor.wordWrap": "on",
   "files.autoSave": "afterDelay",
   "window.titleBarStyle": "native",
   "window.zoomLevel": 0.5,
@@ -59,7 +60,10 @@
     "source.fixAll.eslint": "always"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
   /*
