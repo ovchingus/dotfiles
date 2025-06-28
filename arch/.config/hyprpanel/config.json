@@ -13,13 +13,13 @@
   "theme.font.name": "Ubuntu Nerd Font",
   "theme.font.label": "InterFontNerdPropo",
   "menus.transition": "crossfade",
-  "scalingPriority": "gdk",
+  "scalingPriority": "hyprland",
   "theme.osd.muted_zero": true,
-  "menus.clock.time.military": true,
+  "menus.clock.time.military": false,
   "menus.clock.time.hideSeconds": true,
   "menus.clock.weather.unit": "metric",
-  "menus.clock.weather.location": "Saint-Petersburg",
-  "menus.dashboard.shortcuts.enabled": false,
+  "menus.clock.weather.location": "Los Angeles",
+  "menus.dashboard.shortcuts.enabled": true,
   "menus.dashboard.directories.enabled": false,
   "theme.bar.buttons.modules.microphone.enableBorder": false,
   "theme.bar.buttons.modules.netstat.enableBorder": false,
@@ -83,5 +83,7 @@
   "bar.workspaces.showWsIcons": false,
   "bar.workspaces.showApplicationIcons": false,
   "bar.workspaces.applicationIconOncePerWorkspace": true,
-  "bar.workspaces.numbered_active_indicator": "underline"
+  "bar.workspaces.numbered_active_indicator": "underline",
+  "bar.clock.format": "%a %b %d  %I:%M %p",
+  "menus.clock.weather.enabled": false
 }

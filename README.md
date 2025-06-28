@@ -19,13 +19,12 @@ Required packages:
 - git
 - stow
 - brew (on MacOS)
-- rsync
 
 1. Clone `dotfiles` directory to your user home directory.
 
    ```sh
    cd ~
-   git clone https://github.com/ovchingus/dotfiles.git .dotfiles
+   git clone https://github.com/ovchingus/dotfiles.git dotfiles
    ```
 
 2. Use stow to create symlinks in home directory
@@ -36,6 +35,14 @@ Run `installMacos.sh` or `installArch.sh` to initialize configurations.
    chmod +x installMacos.sh
    ./installMacos.sh
    ```
+
+## Arch settings
+
+### Give permissions to kanata
+
+Kanata is a keyboard remapper tool. It needs access to input/uinput to run.
+
+Script to give access placed in `installArch.sh` file.
 
 ## MacOS settings
 

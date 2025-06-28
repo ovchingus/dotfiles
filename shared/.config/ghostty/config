@@ -43,6 +43,6 @@
 # resize-overlay-duration = 4s 200ms
 
 # confirm-close-surface = true
-# font-family = "Liga SFMono Nerd Font"
-# font-size = 16
+font-family = "FiraCodeNerdFont"
+font-size = 12
 theme = tokyonight_moon
