@@ -1,0 +1,17 @@
+[user]
+	name = Vladimir Ovechkin
+  email = ovchingus@gmail.com 
+[diff]
+	relative = true
+[core]
+	editor = nvim
+  ; TODO: Setup delta git diff pager
+  ; pager = delta
+[interactive]
+    ; diffFilter = delta --color-only
+[delta]
+    ; navigate = true  # use n and N to move between diff sections
+    ; line-numbers = true
+    ; syntax-theme = tokyonight_moon
+[merge]
+    conflictstyle = zdiff3
