@@ -85,5 +85,7 @@
   "bar.workspaces.applicationIconOncePerWorkspace": true,
   "bar.workspaces.numbered_active_indicator": "underline",
   "bar.clock.format": "%a %b %d  %I:%M %p",
-  "menus.clock.weather.enabled": false
+  "menus.clock.weather.enabled": false,
+  "theme.notification.close_button.label": "#e01b24",
+  "theme.notification.close_button.background": "#181826"
 }
