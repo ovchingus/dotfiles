@@ -1,0 +1,26 @@
+#!/bin/zsh
+#
+# .zsh_plugins.txt - antidote plugins file
+#
+
+# Vim mode
+jeffreytse/zsh-vi-mode
+
+# Completions
+mattmc3/ez-compinit
+zsh-users/zsh-completions kind:fpath path:src
+aloxaf/fzf-tab
+
+# Prompt
+romkatv/powerlevel10k
+
+# Utilities
+#zshzoo/macos conditional:is-macos
+
+# Other Fish-like features
+zdharma-continuum/fast-syntax-highlighting  # Syntax highlighting
+zsh-users/zsh-autosuggestions               # Auto-suggestions
+zsh-users/zsh-history-substring-search      # Up/Down to search history
+
+# Git alias
+davidde/git

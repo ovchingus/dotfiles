@@ -5,7 +5,7 @@ return {
     lazy = false,
     opts = {
       provider = "deepseek",
-      vendors = {
+      providers = {
         deepseek = {
           __inherited_from = "openai",
           api_key_name = "DEEPSEEK_API_KEY",
@@ -26,7 +26,7 @@ return {
       "stevearc/dressing.nvim",
       "nvim-lua/plenary.nvim",
       "MunifTanjim/nui.nvim",
-      "ibhagwan/fzf-lua", -- for file_selector provider fzf
+      "ibhagwan/fzf-lua",            -- for file_selector provider fzf
       "nvim-tree/nvim-web-devicons", -- or echasnovski/mini.icons
       {
         "MeanderingProgrammer/render-markdown.nvim",

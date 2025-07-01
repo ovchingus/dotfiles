@@ -26,8 +26,9 @@
     },
     "version": "2"
   },
-  // "autosave": "on_focus_change",
-  "buffer_font_family": "Hack Nerd Font Mono",
+  "ui_font_family": "Inter Nerd Font Propo",
+  "ui_font_size": 16,
+  "buffer_font_family": "FiraCode Nerd Font",
   "buffer_font_features": {
     "calt": false
   },
@@ -36,7 +37,6 @@
   "tab_bar": {
     "show_nav_history_buttons": false
   },
-  // "format_on_save": "on",
 
   /**
    * Vim mode
@@ -57,6 +57,7 @@
   },
 
   "terminal": {
+    "font_family": "FiraCode Nerd Font",
     "font_size": 14
   },
 
