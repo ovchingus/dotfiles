@@ -1,3 +1,14 @@
+TARGET_DIR=$HOME
+
+### Make config dir if not exist yet
+mkdir -p "$TARGET_DIR/.config"
+
+### Stow all configs to $HOME folder
+stow -R -d ./shared -t "$TARGET_DIR/.config" .config
+stow -R -d ./shared -t "$TARGET_DIR" .
+stow -R -d ./macos -t "$TARGET_DIR/.config" .config
+stow -R -d ./macos -t "$TARGET_DIR" .
+
 ### Install brew packages with brew bundle
 brew bundle
 

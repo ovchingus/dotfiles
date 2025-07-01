@@ -42,7 +42,7 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 
-# confirm-close-surface = true
+confirm-close-surface = false
 font-family = "FiraCodeNerdFont"
 font-size = 12
 theme = tokyonight_moon
