@@ -19,10 +19,10 @@
     "latex": true,
     "graphql": true
   },
-  "assistant": {
+  "agent": {
     "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-3-7-sonnet-latest"
+      "provider": "deepseek",
+      "model": "deepseek-chat"
     },
     "version": "2"
   },
@@ -72,6 +72,7 @@
     "dark": "One Dark"
   },
 
+  "format_on_save": "on",
   "languages": {
     "JavaScript": {
       "code_actions_on_format": {
