@@ -19,7 +19,11 @@ autoload -Uz $ZFUNCDIR/*(.:t)
 [[ ! -f ${ZDOTDIR:-$HOME}/.zstyles ]] || source ${ZDOTDIR:-$HOME}/.zstyles
 
 # Create an amazing Zsh config using antidote plugins.
-source /usr/share/zsh-antidote/antidote.zsh
+if is-macos; then
+  source /opt/homebrew/share/antidote/antidote.zsh
+else
+  source /usr/share/zsh-antidote/antidote.zsh
+fi
 antidote load
 
 # Source anything in .zshrc.d.
