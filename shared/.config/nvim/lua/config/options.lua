@@ -4,3 +4,6 @@
 vim.g.snacks_animate = false
 vim.opt.list = false
 vim.opt.wrap = true
+
+-- Performance optimization
+vim.lsp.set_log_level("off")

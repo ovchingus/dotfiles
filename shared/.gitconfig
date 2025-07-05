@@ -15,3 +15,6 @@
     ; syntax-theme = tokyonight_moon
 [merge]
     conflictstyle = zdiff3
+
+[includeIf "gitdir:~/Projects/ecom/"]
+  path = ~/Projects/ecom/.gitconfig

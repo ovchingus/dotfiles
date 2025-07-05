@@ -9,7 +9,10 @@ after-login-command = []
 # You can use it to add commands that run after AeroSpace startup.
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
-after-startup-command = ['exec-and-forget sketchybar']
+after-startup-command = [
+  'exec-and-forget sketchybar',
+  # 'exec-and-forget borders'
+]
 
 exec-on-workspace-change = [
     '/bin/bash',
@@ -67,7 +70,7 @@ inner.horizontal = 5
 inner.vertical =   5
 outer.left =       5
 outer.bottom =     5
-outer.top = [{ monitor."built-in" = 8 }, 40]
+outer.top = [{ monitor."built-in" = 12 }, 40]
 outer.right =      5
 
 # 'main' binding mode declaration

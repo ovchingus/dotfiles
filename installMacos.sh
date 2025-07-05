@@ -22,4 +22,4 @@ bat cache --build
 
 ### Cursor
 # Link cursor settings
-ln -sf ~/.dotfiles/.config/cursor/settings.json ~/Library/Application\ Support/Cursor/User/settings.json
+# ln -sf ~/.dotfiles/.config/cursor/settings.json ~/Library/Application\ Support/Cursor/User/settings.json

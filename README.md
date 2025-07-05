@@ -67,6 +67,10 @@ Make it only appear if you float over it with the mouse for 10 seconds (use 4 fi
 
 having desktop icons is not very user-friendly together with tiling window managers and, be honest, it is cluttered most of the time anyways so it is recommended to disable them in "Desktop & Dock"  
 
+disable both:
+System Preferences > Desktop & Dock > Desktop & Stage Manager > Show Items
+System Preferences > Desktop & Dock > Widgets > Show Widgets
+
 ### disable window animations
 
 Run in terminal:  
@@ -90,6 +94,9 @@ Run in terminal:
 
 Enable this in MacOS settings "Desktop & dock" or else Sketchybar will not start. In general Aerospace recommends disabling this though.  
 Read about it here: <https://nikitabobko.github.io/AeroSpace/guide#a-note-on-displays-have-separate-spaces>  
+
+enable toggle:
+System Preferences > Desktop & Dock > Mission Control > Displays have separate Spaces
 
 Sketchybar might work with the option being disabled in the future.  
 <https://github.com/FelixKratz/SketchyBar/issues/495>
