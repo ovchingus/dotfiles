@@ -44,5 +44,5 @@
 
 confirm-close-surface = false
 font-family = "FiraCode Nerd Font"
-font-size = 12
+font-size = 16
 theme = tokyonight_moon

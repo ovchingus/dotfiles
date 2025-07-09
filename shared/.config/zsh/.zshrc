@@ -35,5 +35,6 @@ for _rc in ${ZDOTDIR:-$HOME}/.zshrc.d/*.zsh; do
 done
 unset _rc
 
+eval "$(starship init zsh)"
 # To customize prompt, run `p10k configure` or edit .p10k.zsh.
 # [[ ! -f ${ZDOTDIR:-$HOME}/.p10k.zsh ]] || source ${ZDOTDIR:-$HOME}/.p10k.zsh
