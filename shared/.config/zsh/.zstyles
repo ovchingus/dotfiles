@@ -13,4 +13,8 @@
 # Available completion styles: gremlin, ohmy, prez, zshzoo
 # You can add your own too. To see all available completion styles
 # run 'compstyle -l'
-zstyle ':plugin:ez-compinit' 'compstyle' 'zshzoo'
+zstyle ':plugin:ez-compinit' 'compstyle' 'ohmy'
+
+# https://github.com/Aloxaf/fzf-tab/issues/24#issuecomment-574986122
+# zstyle -d ':completion:*' format
+# zstyle ':completion:*:descriptions' format '-- %d --'
