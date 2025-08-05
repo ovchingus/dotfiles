@@ -192,3 +192,8 @@ run = ['move-node-to-workspace 8']
 [[on-window-detected]]
 if.app-id = 'com.bitwarden.desktop'
 run = ['move-node-to-workspace 8']
+
+## Custom floating apps
+[[on-window-detected]]
+    if.app-id = 'com.electron.awakened-poe-trade'
+    run = 'layout floating'
