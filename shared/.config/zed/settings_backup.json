@@ -7,43 +7,6 @@
 // custom settings, run the `zed: Open Default Settings` command
 // from the command palette
 {
-  "language_models": {
-    "openai_compatible": {
-      "ProxyAPI_ALL": {
-        "api_url": "https://openai.api.proxyapi.ru/v1",
-        "available_models": [
-          {
-            "name": "openai/gpt-4o",
-            "display_name": null,
-            "max_tokens": 200000,
-            "max_output_tokens": 16384,
-            "max_completion_tokens": 200000
-          },
-          {
-            "name": "openai/gpt-5",
-            "display_name": null,
-            "max_tokens": 200000,
-            "max_output_tokens": 32000,
-            "max_completion_tokens": 200000
-          },
-          {
-            "name": "gemini/gemini-2.5-pro",
-            "display_name": null,
-            "max_tokens": 200000,
-            "max_output_tokens": 32000,
-            "max_completion_tokens": 200000
-          },
-          {
-            "name": "deepseek/deepseek-chat",
-            "display_name": null,
-            "max_tokens": 200000,
-            "max_output_tokens": 32000,
-            "max_completion_tokens": 200000
-          }
-        ]
-      }
-    }
-  },
   "autosave": {
     "after_delay": {
       "milliseconds": 1000
@@ -58,9 +21,10 @@
   },
   "agent": {
     "default_model": {
-      "provider": "ProxyAPI_ALL",
-      "model": "openai/gpt-4o"
-    }
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    },
+    "version": "2"
   },
   "ui_font_family": "Inter Nerd Font Propo",
   "ui_font_size": 16,
@@ -82,7 +46,6 @@
     "use_system_clipboard": "always",
     "toggle_relative_line_numbers": true
   },
-  "soft_wrap": "editor_width",
   "cursor_blink": false,
   "scroll_beyond_last_line": "vertical_scroll_margin",
   /****/
