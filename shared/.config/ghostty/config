@@ -46,3 +46,6 @@ confirm-close-surface = false
 font-family = "FiraCode Nerd Font"
 font-size = 16
 theme = tokyonight_moon
+
+keybind = ctrl+shift+c=copy_to_clipboard
+keybind = ctrl+shift+v=paste_from_clipboard
