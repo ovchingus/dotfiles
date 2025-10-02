@@ -14,7 +14,7 @@ stow -R -d ./macos -t "$TARGET_DIR" .
 
 ### Bat
 # command to build custom themes from ../../bat/themes/ directory
-# bat cache --build
+bat cache --build
 
 ### Cursor
 # Link cursor settings

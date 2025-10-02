@@ -1,0 +1,1021 @@
+python3
+brew search nekoray
+brew search sing-box
+brew install sing-box
+brew services start sing-box
+sing-box
+brew services stop sing-bo
+brew services stop sing-box
+brew services list
+brew services cleanup
+brew services info
+brew services
+sing-box check
+sing-box --config ~/.config/sing-box/config.json --directory ~/.config/sing-box check
+sing-box --config ~/.config/sing-box/config.json --directory ~/.config/sing-box
+sing-box --config ~/.config/sing-box/config.json --directory ~/.config/sing-box run
+sudo sing-box --config ~/.config/sing-box/config.json --directory ~/.config/sing-box run
+sudo sing-box --config ~/.config/sing-box/config.json --directory ~/.config/sing-box run
+sudo sing-box --config ~/.config/sing-box/config.json --directory ~/.config/sing-box version
+nvim .config/borders/bordersrc
+nvim .config
+nvim .config/sing-box/config.json
+vpn
+cd Projects
+git clone git@github.com:Toperlock/sing-box-subscribe.git
+cd sing-box-subscribe
+ls
+pip
+brew search pip
+brew install python
+pip 
+cd 
+ls -a
+python3 -m venv Projects/sing-box-subscribe/.venv
+source Projects/sing-box-subscribe/.venv/bin/activate
+pip3 install -r Projects/sing-box-subscribe/requirements.txt
+source Projects/sing-box-subscribe/.venv/bin/activate
+pip
+which pip
+python3.13
+pip
+brew reinstall python
+pip3
+ls
+ls -a
+pip3 install -r requirements.txt
+ cd Projects/sing-box-subscribe
+pip3 install -r requirements.txt
+pip3 install -r requirements.txt
+ls
+pip3 install
+pip3 list
+pip3 download
+pip3 download -r requirements.txt
+ls
+pip3 install -r requirements.txt
+ls -a
+nvim
+pip3 install -r requirements.txt
+gs
+rm -rf .
+rm -rf *
+ls
+grhard
+gs
+ls
+python3 -m venv .
+brew install pipx 
+sudo rm -rf venv
+ls
+pipx 
+pipx install 
+pipx install requirements.txt
+bat ~/.local/pipx/logs/cmd_2025-07-03_23.42.06_pip_errors.log
+pipx install 
+pip3 install -r requirements.txt
+brew uninstall pipx
+rm -rf ~/.local/pipx
+pip3 install -r requirements.txt
+python3 -m venv .
+python3 -m venv . -v
+pip3 install -r requirements.txt
+python3 -m venv .venv
+gs
+bat .gitignore
+ls -a
+source .venv
+python3 -m venv .venv
+brew search python-venv
+brew search venv
+ls -a .venv
+source .venv/bin/activate
+ls
+pip3 install -r requirements.txt
+ls
+ls -a
+nvim
+nvim
+ls
+python3 main.py
+ls
+bat config.json
+cd 
+deactivate
+ls
+nvim .config/sing-box/config.json
+chmod +x ./.config/sing-box/updateConfig.sh
+./.config/sing-box/updateConfig.sh
+nvim .config/sing-box/config.json
+./.config/sing-box/updateConfig.sh
+bat ./.config/sing-box/updateConfig.sh
+python3 -m venv Projects/sing-box-subscribe/.venv
+cd Projects/sing-box-subscribe
+nvim .config/sing-box/config.json
+cd
+nvim .config/sing-box/config.json
+./.config/sing-box/updateConfig.sh
+nvim .config/sing-box/config.json
+./.config/sing-box/updateConfig.sh
+nvim .config/sing-box/config.json
+nvim ./.config/sing-box/updateConfig.sh
+./.config/sing-box/updateConfig.sh
+nvim .config/sing-box/config.json
+nvim ./.config/sing-box/updateConfig.sh
+./.config/sing-box/updateConfig.sh
+vpn
+ls
+cd 
+ls
+nvim .config/borders/bordersrc
+nvim .config/aerospace/aerospace.toml
+borders
+borders --reload
+kill 1285
+borders
+borders
+borders
+borders
+borders
+borders
+borders
+borders
+borders
+borders
+borders
+sketchybar --reload
+borders
+borders --reload
+borders
+nvim .config/borders/bordersrc
+cd
+brew search steam
+brew install steam --cask
+brew list
+ssh -v
+ssh -V
+npm i
+cd 
+nvim .config/borders/bordersrc
+cp -R Projects/fdbk-client-web Projects/ecom
+cd Projects
+ls
+ls ecom
+rm -rf fdbk-client-web
+cd ecom
+ls
+nvim .gitconfig
+cd fdbk-client-web
+git config --list
+cd 
+nvim .gitconfig
+cd Projects/ecom/fdbk-client-web
+git config --list
+git config user.email
+git diff 
+nvim ../.gitconfig
+git diff
+git diff | bat
+bat package.json
+nvim
+sketchybar --reload
+sketchybar --reload
+sleep 1
+sketchybar --reload
+sketchybar --reload
+sketchybar --reload
+kill 13166
+sketchybar --reload
+sketchybar 
+sketchybar 
+sketchybar 
+sketchybar 
+sketchybar 
+sketchybar 
+sketchybar 
+sketchybar 
+sketchybar 
+sketchybar 
+sketchybar 
+sketchybar 
+sketchybar 
+ls
+brew search reaper
+brew install reaper --cask
+nvim .config/aerospace/aerospace.toml
+nvim .config/sketchybar
+sketchybar --reload
+nvim .config/sketchybar
+sketchybar --reload
+nvim .config/sketchybar
+sketchybar --reload
+nvim .config/sketchybar
+nvim .config/sketchybar
+cd Projects/ecom
+cd fdbk-client-web
+nvim
+nvim 
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+sudo nvim
+nvim
+nvim
+nvim
+nvim
+nvim 
+nvim
+nvim
+nvim
+gst
+ga .
+gc -m 'feat: implement filter selector\
+\
+Implement filter selector, which use query to save state\
+\
+closes E004-5757'
+nvim
+gs
+nvim
+gs
+nvim
+nvim
+nvim
+nvim
+nvim
+ls
+cd Projects/ecom/fdbk-client-web
+nvim
+gs
+ga .
+npm run eslint
+npm run eslint:fix
+npm run lint:fix
+gc -m "feat: implement filter selector\
+\
+Add filter selector, which saves state in query\
+\
+closes E004-5757'\
+"
+gc --amend
+gcb feature/E004-5757
+which gcob
+gcob feature/E004-5757
+ggp
+gp
+which gpdo
+which gpo
+which gpd
+which gperf
+which gpt
+which gpf
+which gpl
+gp --set-upstream origin feature/E004-5757
+nvim
+nvim
+nvim
+nvim
+sketchybar
+cd Projects/ecom/fdbk-client-web
+npm i
+rm -rf package-lock.json node_modules
+npm i
+npm i
+brew search ardour
+bat package.json
+npm start
+npm i
+npm start
+ls
+cd
+nvim
+nvim
+nvim
+nvim
+sudo nvim
+nvim
+nvim
+nvim
+nvim
+nvim 
+ls
+nvim
+nvim
+sudo nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+cd Projects/dotfiles
+gs
+ga .
+gc -m "feat: update mac and nvim config"
+gp
+nvim
+gs
+cd
+brew search nekoray
+brew search hiddify
+v2ray
+nvim
+sudo hiddify 
+sudo open -e Hiddify.app
+sudo open -a Hiddify
+sudo /Applications/Hiddify.app/Contents/MacOS/Hiddify
+vpn
+brew update
+brew outdated
+brew upgrade 
+antidote update
+antidote-help
+antidote list
+cd Projects/dotfiles
+ZSH_AUTOSUGGEST_STRATEGY=()
+nvim /Users/hq-dd20yg7l9p/Projects/dotfiles/ 
+nvim /Users/hq-dd20yg7l9p/Projects/dotfiles/ 
+nvim /Users/hq-dd20yg7l9p/Projects/dotfiles/ 
+nvim /Users/hq-dd20yg7l9p/Projects/dotfiles/shared/.config/zsh
+ls
+ls
+cd
+exit
+ls  
+exit
+ls
+ls
+exit
+echo $TERM
+echo $SHELL
+exit
+exit
+ls
+bat /etc/bashrc
+exit
+ls
+bash
+exit
+ls
+bash
+ls
+exit
+ls
+exit
+git add
+cd 
+cd Downloads/ECOM\ Wallpapers
+ls
+ls wallpaper.jpg -@
+ls . -@
+cd 
+cd Projects/ecom/ecom-react-core
+gs
+ga .
+nvim 
+gs
+git diff
+gs
+ga .
+gs
+glog
+gc -m "FEP-550: Ѓ�обавлено модалу�ное окно ву�бора тему� в AppLayout"
+gcob feature/FEP-550
+gp
+which gpd
+which gpdo
+which gperf
+which gpf
+which gpl
+which gpt
+git push --set-upstream origin feature/FEP-550
+cd\
+R\
+
+nvim
+cd Projects/dotfiles
+gs
+ga .
+gc -m 'fix: fix zsh compstyle'
+gp
+gpl
+git diff
+git diff 383a205
+git diff 37749b5
+gpl
+git config pull.rebase false
+gpl
+gs
+glog
+gp
+gpl
+cd Projects
+gst
+ls
+cd ecom
+git clone ssh://git@git.ecom.tech:5022/ecom/dev/pap/frontend/web/react/ecom-react-core.git
+cd ecom-react-core
+nvim
+git config user.
+git config user
+git config user.email
+npm i
+nvim 
+nvim 
+nvim
+nvim
+nvim
+nvim
+nvim 
+nvim 
+nvim
+ls
+git restore -s master tsconfig.json
+gs
+nvim
+git restore ./tsconfig.json
+git restore -s master~2 ./tsconfig.json
+nvim
+gs
+ga .
+gc -m 'hotfix'
+ggp
+gp
+nvim
+nvim
+gs
+ga .
+gc -m 'hotfix'
+gp
+nvim
+nvim
+npm run lint:fix
+nvim
+gs
+npm i
+gs
+ga .
+gc -m 'rewiew fixes\
+'
+gp
+brew search guitar
+ssh hq-dd20yg7l9p@192.168.0.214
+sketchybar
+sketchybar
+npm start storybook
+npm run storybook
+npm run storybook
+ls
+cd Projects/dotfiles
+nvim
+top
+brew upgrade
+top
+htop
+brew install htop
+htop
+top
+ls
+cd
+ls
+ls
+exit
+ду�
+ls
+sshuttle
+brew install sshuttle
+sshuttle 
+sshuttle --dns -r hq-dd20yg7l9p@192.168.0.214 0/0
+exit
+brew install starship
+brew reinstall sshuttle
+brew remove sshuttle
+cd Projects/dotfiles
+nvim
+ls
+ls
+ls
+ls
+cd
+cd
+cd Projects/dotfiles
+ls
+nvim
+./installMacos.sh
+nvim
+cd 
+ls 
+ls 
+ls 
+cd ./.npm/
+nvim 
+cd
+ls
+ls
+ls
+ls
+cd
+cd
+cd
+starship config
+starship preset pure-preset -o ~/.config/starship.toml
+ls
+ls
+ls
+ls
+ls
+bat .config/kitty/kitty.conf
+brew list 
+brew install --cask font-fira-code-nerd-font
+npm start
+./installMacos.sh
+ls
+ls
+ls
+cd
+cd Projects/dotfiles
+gs
+ga .
+ls
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+gs
+ls
+ls
+ls
+ga .
+gc -m "feat: setup starship prompt"
+gp
+gs
+gs
+starship preset jetpack -o ~/.config/starship.toml
+ls 
+ls
+cd
+cd
+ls
+cd Projects/dotfiles
+ls
+nvim
+cd
+cd
+starship toggle
+ls
+cd
+starship preset pure-preset -o ~/.config/starship.toml
+ls
+cd
+cd Projects/ecom/fdbk-client-web
+nvim 
+gpl
+nvim 
+npm run lint:fix
+gs
+ga .
+gc -m 'style: fix eslint issues'
+nvim
+nvim
+nvim
+gs
+ga .
+gc -m 'fix: review fixes for filter configuration'
+npm run lint:fix
+gs
+gs
+gp
+пу�е ау�еср
+which gf
+gf
+which grb
+grb -i origin/master
+glog
+which glo
+glo
+glo
+gp
+which gpf
+gpf
+cd
+cd Projects/dotfiles
+nvim
+gpl
+nvim 
+gpl
+./installMacos.sh
+nvim 
+brew remove sshuttle
+cd ../ecom-react-core
+nvim
+gs
+ga .
+gc -m 'rewiew fixes\
+'
+gp
+brew install kitty
+kitty choose-fonts
+nvim .config/kitty/kitty.conf
+ls
+kitten choose-fonts
+nvim .config/kitty/kitty.conf
+kitty choose-fonts
+kitten choose-fonts
+nvim .config/kitty/kitty.conf
+ls
+ls
+cd 
+nvim .config/kitty/kitty.conf
+ls
+nvim .config/kitty/kitty.conf
+nvim .config/kitty/kitty.conf
+ghostty +list-fonts
+cd Projects
+git clone git@github.com:folke/tokyonight.nvim.git
+cd 
+nvim .config/ghostty/config
+ls
+nvim .config/kitty/kitty.conf
+bat .config/kitty/kitty.conf
+ls
+cd ./.config/
+ls
+nvim 
+ls
+ls -al
+ls -al -G
+ls -al -G
+ls
+cd Projects/ecom/fdbk-client-web
+nvim 
+cd Projects/ecom/fdbk-client-web
+nvim
+gs
+ga .
+gc -m 'feat: remove TextArea max length counter\
+\
+closes E004-5757'
+gp
+nvim 
+cd 
+cd Projects/dotfiles
+nvim
+nvim
+cd 
+nvim .zshenv
+echo $OPENAI_API_KEY
+ls
+cd Projects/dotfiles
+cd
+cd Projects/dotfiles
+nvim
+nvim
+nvim
+nvim
+nvim 
+nvim
+sudo nvim
+cd 
+bat ./.local/share/nvim/lazy/CopilotChat.nvim/lua/CopilotChat/config/providers.lua 
+nvim
+nvim
+bat ./.local/state/nvim/CopilotChat.log 
+nvim 
+nvim
+rm ./.local/state/nvim/CopilotChat.log 
+nvim
+bat ./.local/state/nvim/CopilotChat.log 
+nvim
+bat ./.local/state/nvim/CopilotChat.log 
+nvim
+nvim
+bat ./.local/state/nvim/CopilotChat.log 
+nvim
+nvim
+nvim 
+cd Projects/dotfiles
+nvim
+nvim
+ghostty +list-themes
+ghostty +list-themes
+npm start
+top
+brew updated
+brew update
+top
+brew reinstall brave-browser
+cd Projects/ecom/fdbk-client-web
+gco master
+gpl
+gpl
+glo
+which grh
+grh HEAD~5
+which grhard
+grhard HEAD~5
+gpl
+npm start
+grhard HEAD
+cd ../ecom-react-core
+nvim
+nvim
+nvim
+nvim
+nvim
+npm run lint:fix
+nvim
+gp
+gp
+glo
+gs
+ga .
+gc -m 'feat: add system theme indicator'
+gp
+git pull
+git fetch
+grb origin/master
+nvim
+grb --continue
+gs
+ga .
+grb --continue
+gp
+gpf
+nvim
+cd ../fdbk-client-web
+gpl
+nvim 
+cd ..
+git clone ssh://git@git.ecom.tech:5022/ecom/cicd/smkt/helm.git helm-smkt
+cd helm-smkt
+gcob feature/E080-107
+gpl
+which gcobb
+which gcoc
+which gcod
+which gcom
+which gcop
+which gcore
+which gcov
+gcobb
+gcob -
+gco -
+gco origin/feature/E080-107
+gs
+nvim
+gcm
+gcobb
+gcom
+gpl
+gco feature/E080-107
+gpl
+gcom
+gb -D feature/E080-107
+gco feature/E080-107
+gpl
+nvim
+gs
+ga .
+gc -m 'hotfix'
+gp
+nvim
+cd ../fdbk-client-web
+nvim
+nvim
+cd Projects/ecom/fdbk-client-web
+nvim
+nvim
+gs
+npm run lint:fix
+nvim
+npm run lint:fix
+gs
+ga .
+gs
+ga .
+gc -m 'feat: implement chat ui\
+\
+Implement chat widget for feedback details page\
+\
+closes E004-6382'
+gcob feature/E004-6382
+gp
+gp --set-upstream origin feature/E004-6382
+npm run storybook
+nvim
+cd ../eo
+cd ../ecom-react-core
+nvim
+gs
+ga .
+gc -m 'fix: refactor folder structure'
+gp
+cd Projects/ecom/fdbk-client-web
+npm start
+npm start
+npm start
+npm run ts:check
+npm i
+npm start
+npm run lint:ci
+cd Projects
+git clone git@github.com:SciresM/hactool.git
+cd hack
+cd hactool
+ls
+nvim 
+make
+ls
+ls
+nvim
+chmod +x hactool
+./hactool --help
+./hactool -k ~/Downloads/test/prod.keys ~/Downloads/test/save/000000000000000b
+./hactool -k ~/Downloads/test/prod.keys ~/Downloads/test/save/0000000000000019
+nvim
+./hactool ~/Downloads/test/save/0000000000000019
+./hactool -k ~/Downloads/test/prod.keys ~/Downloads/test/save/0000000000000019
+ls
+./hactool -k ~/Downloads/test/prod.keys ~/Downloads/test/save/0000000000000019 --outdir ~/Downloads/test
+./hactool --help
+./hactool -k ~/Downloads/test/prod.keys -t save --outdir ~/Downloads/test ~/Downloads/test/save/0000000000000019
+./hactool -k ~/Downloads/test/prod.keys -t save --outdir ~/Downloads/test ~/Downloads/test/save/000000000000000b
+./hactool -k ~/Downloads/test/prod.keys -t save --outdir ~/Downloads/test/save1 ~/Downloads/test/save/000000000000000b
+./hactool -k ~/Downloads/test/prod.keys -t save --outdir ~/Downloads/test/save1 ~/Downloads/test/save/000000000000000d
+bat ~/Downloads/test/save1/settings
+bat ~/Downloads/test/save1/meta_0
+bat ~/Downloads/test/save1/Prefs.dict
+bat ~/Downloads/test/save1/slot_0
+./hactool -k ~/Downloads/test/prod.keys -t save --outdir ~/Downloads/test/save1 ~/Downloads/test/save/000000000000000e
+./hactool -k ~/Downloads/test/prod.keys -t save --outdir ~/Downloads/test/save1 ~/Downloads/test/save/000000000000000b
+./hactool -k ~/Downloads/test/prod.keys -t save --outdir ~/Downloads/test/save1 ~/Downloads/test/save/000000000000000d
+./hactool -k ~/Downloads/test/prod.keys -t save --outdir ~/Downloads/test/save1 ~/Downloads/test/save/000000000000000e
+./hactool -k ~/Downloads/test/prod.keys -t save --outdir ~/Downloads/test/save1 ~/Downloads/test/save/000000000000000f
+brew search vmware
+brew install vmware-fusion
+cd ..
+cd ecom/ecom-react-core
+nvim
+gs
+npm run ts:check
+npm run lint:check
+bat package.json
+npm run lint:ci
+gs
+nvim 
+gs
+ga .
+gc -m 'fix: version bump'
+gp
+ga .
+gp
+gp
+cd ../fdbk-client-web
+nvim
+gs
+ga .
+gc -m 'fix: Add details accordion'
+gp
+git detch
+git fetch
+grb master
+grb master -i
+gp
+gs
+grb origin/master
+grb origin/master -i
+gp
+gpf
+пу�
+пу�
+gs
+cd ../ecom-react-core
+nvim
+nvim
+gs
+nvim
+npm run lint:fix
+тму�у�
+nvim
+ga .
+gs
+gc -m 'fix: compnent naming'
+gc --amend
+gp
+nvim
+gs
+ga .
+gc -m 'fix: update memoization'
+gp
+ls
+brew search sunshine
+brew tap LizardByte/homebrew
+brew install sunshine
+/opt/homebrew/opt/sunshine/bin/sunshine /Users/hq-dd20yg7l9p/.config/sunshine/sunshine.conf
+cd 
+cd Downloads
+cd test
+~/Projects/hactool/hactool -k prod.keys -t save --outdir save1 save/000000000000000b
+~/Projects/hactool/hactool -k prod.keys -t save --outdir save2 save/000000000000000d
+~/Projects/hactool/hactool -k prod.keys -t save --outdir save3 save/000000000000000e
+~/Projects/hactool/hactool -k prod.keys -t save --outdir save4 save/000000000000000f
+~/Projects/hactool/hactool -k prod.keys -t save --outdir save5 save/000000000000001a
+~/Projects/hactool/hactool -k prod.keys -t save --outdir save6 save/0000000000000010
+~/Projects/hactool/hactool -k prod.keys -t save --outdir save7 save/0000000000000012
+~/Projects/hactool/hactool -k prod.keys -t save --outdir save8 save/0000000000000013
+~/Projects/hactool/hactool -k prod.keys -t save --outdir save9 save/0000000000000014
+~/Projects/hactool/hactool -k prod.keys -t save --outdir save10 save/0000000000000015
+~/Projects/hactool/hactool -k prod.keys -t save --outdir save11 save/0000000000000016
+~/Projects/hactool/hactool -k prod.keys -t save --outdir save12 save/0000000000000017
+~/Projects/hactool/hactool -k prod.keys -t save --outdir save13 save/0000000000000018
+~/Projects/hactool/hactool -k prod.keys -t save --outdir save14 save/0000000000000019
+cd 
+cd Downloads/test
+ls
+~/Projects/hactool/hactool -k prod.keys -t save save/000000000000000b --sign --repack save14_2
+~/Projects/hactool/hactool -k prod.keys -t save save/000000000000000b --repack save14_2
+~/Projects/hactool/hactool -k prod.keys -t save save/0000000000000019 --outdir save14_2 --listfiles
+~/Projects/hactool/hactool -k ./prod.keys -t save save/0000000000000019 --outdir save14_2 --listfiles
+~/Projects/hactool/hactool -k ./prod.keys -t save save/0000000000000019 --outdir ./save14_2 --listfiles
+~/Projects/hactool/hactool -k ./prod.keys -t save save/0000000000000019 --outdir ./save14_2
+~/Projects/hactool/hactool -k ./prod.keys -t save save/000000000000000b --outdir ./save1
+~/Projects/hactool/hactool -k ./prod.keys -t save save/000000000000000d --outdir ./save1
+~/Projects/hactool/hactool -k ./prod.keys -t save --outdir ./save1 save/000000000000000e
+~/Projects/hactool/hactool -k ./prod.keys -t save --outdir ./save1 save/000000000000000f
+~/Projects/hactool/hactool -k ./prod.keys -t save --outdir ./save1 save/000000000000001a
+~/Projects/hactool/hactool -k ./prod.keys -t save --outdir ./save1 save/0000000000000010
+~/Projects/hactool/hactool -k ./prod.keys -t save --outdir ./save1 save/0000000000000012
+~/Projects/hactool/hactool -k ./prod.keys -t save --outdir ./save1 save/0000000000000013
+~/Projects/hactool/hactool -k ./prod.keys -t save --outdir ./save1 save/0000000000000014
+~/Projects/hactool/hactool -k ./prod.keys -t save --outdir ./save1 save/0000000000000015
+~/Projects/hactool/hactool -k ./prod.keys -t save --outdir ./save1 save/0000000000000016
+~/Projects/hactool/hactool -k ./prod.keys -t save --outdir ./save1 save/0000000000000017
+~/Projects/hactool/hactool -k ./prod.keys -t save --outdir ./save1 save/0000000000000018
+~/Projects/hactool/hactool -k ./prod.keys -t save --outdir ./save1 save/0000000000000019
+/opt/homebrew/opt/sunshine/bin/sunshine /Users/hq-dd20yg7l9p/.config/sunshine/sunshine.conf
+sunshine
+brew search torrent
+brew install qbittorrent
+brew search filezilla
+brew search transmit
+brew install transmit
+pip3 install pyusb
+python3 -m venv .venv
+source .venv/bin/activate
+pip3 install pyusb
+pip3 install libusb
+cd Projects
+git clone git@github.com:rashevskyv/dbi.git
+cd dbi
+python3 dbibackend ~/Downloads/Undertale\ \[NSP\]/Undertale\ \[010080b00ad66000\]\[v0\].nsp ~/Downloads/Undertale\ \[NSP\]/Undertale\ \[010080B00AD66800\]\[v131072\].nsp
+nvim 
+source .venv/bin/activate
+python3 dbibackend ~/Downloads/Undertale\ \[NSP\]/Undertale\ \[010080b00ad66000\]\[v0\].nsp ~/Downloads/Undertale\ \[NSP\]/Undertale\ \[010080B00AD66800\]\[v131072\].nsp
+nvim
+python3 dbibackend ~/Downloads/Undertale\ \[NSP\]/Undertale\ \[010080b00ad66000\]\[v0\].nsp ~/Downloads/Undertale\ \[NSP\]/Undertale\ \[010080B00AD66800\]\[v131072\].nsp
+python3 dbibackend
+python3 dbibackend
+python3 dbibackend ~/Downloads/Undertale\ \[NSP\]/Undertale\ \[010080b00ad66000\]\[v0\].nsp ~/Downloads/Undertale\ \[NSP\]/Undertale\ \[010080B00AD66800\]\[v131072\].nsp
+brew reinstall python3
+brew install python3
+brew install python-tk
+brew install libusb
+sunrise
+sunshine
+/Volumes/CrossOver\ 25.0.1/Open\ Gatekeeper\ friendly ; exit;
+/Volumes/CrossOver\ 25.0.1/Open\ Gatekeeper\ friendly ; exit;
+PATH="/Users/hq-dd20yg7l9p/Library/Application Support/com.isaacmarovitz.Whisky/Libraries/Wine/bin:/Applications/Whisky.app/Contents/Resources/:$PATH" WINE=wine64 WINEPREFIX="/Users/hq-dd20yg7l9p/Library/Containers/com.isaacmarovitz.Whisky/Bottles/16C56273-F015-44CE-AF2A-227C30B0B9C1" "/Users/hq-dd20yg7l9p/Library/Application Support/com.isaacmarovitz.Whisky/Libraries/winetricks" steam
+PATH="/Users/hq-dd20yg7l9p/Library/Application Support/com.isaacmarovitz.Whisky/Libraries/Wine/bin:/Applications/Whisky.app/Contents/Resources/:$PATH" WINE=wine64 WINEPREFIX="/Users/hq-dd20yg7l9p/Library/Containers/com.isaacmarovitz.Whisky/Bottles/16C56273-F015-44CE-AF2A-227C30B0B9C1" "/Users/hq-dd20yg7l9p/Library/Application Support/com.isaacmarovitz.Whisky/Libraries/winetricks" steam
+npm start
+cd Projects/ecom/fdbk-client-web
+nvim
+gs
+ga .
+gc -m 'fix: update default info is open state'
+grb origin/master -i
+gs
+grb --abort
+gp
+sketchybar
+brew update
+brew upgrade
+aerospace -v
+sketch
+sketchybar
+/Applications/Awakened\ PoE\ Trade.app/Contents/MacOS/Awakened\ PoE\ Trade ; exit;
+sudo xattr -r -d com.apple.quarantine /Applications/Awakened\ PoE\ Trade.app
+codesign --force --deep --sign - /Applications/Awakened\ PoE\ Trade.app\
+\
+

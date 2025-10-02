@@ -5,3 +5,6 @@ theme = tokyonight_moon
 
 keybind = ctrl+shift+c=copy_to_clipboard
 keybind = ctrl+shift+v=paste_from_clipboard
+
+shell-integration = fish
+command = /opt/homebrew/bin/fish

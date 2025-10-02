@@ -11,4 +11,4 @@ stow -R -d ./arch -t "$TARGET_DIR" .
 
 ### Bat
 # command to build custom themes from ../../bat/themes/ directory
-# bat cache --build
+bat cache --build
