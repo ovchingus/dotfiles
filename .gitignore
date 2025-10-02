@@ -5,3 +5,4 @@
 shared/.config/tmux/plugins
 shared/.config/zed/prompts
 shared/.config/zed/conversations
+fish_env

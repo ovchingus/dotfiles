@@ -11,3 +11,5 @@
 	autoSetupRemote = true
 [includeIf "gitdir:~/Projects/ecom/"]
   path = ~/Projects/ecom/.gitconfig
+[includeIf "gitdir:~/Projects/b2data/"]
+  path = ~/Projects/b2data/.gitconfig
