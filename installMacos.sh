@@ -20,3 +20,9 @@ bat cache --build
 # Link cursor settings
 ln -sf "$HOME/.config/cursor/User/settings.json" ~/Library/Application\ Support/Cursor/User/settings.json
 ln -sf "$HOME/.config/cursor/User/keybindings.json" ~/Library/Application\ Support/Cursor/User/keybindings.json
+
+### Write mac settings
+defaults write com.apple.dock autohide -bool true && killall Dock
+defaults write com.apple.dock autohide-delay -float 10000 && killall Dock
+defaults write com.apple.dock autohide-time-modifier -float 0.1 && killall Dock
+defaults write -g ApplePressAndHoldEnabled -bool false
