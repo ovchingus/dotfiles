@@ -17,3 +17,4 @@ set --universal nvm_default_version v24
 
 # Run starship prompt
 starship init fish | source
+
