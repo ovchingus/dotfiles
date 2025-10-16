@@ -6,7 +6,7 @@
   "editor.formatOnSave": true,
   "editor.wordWrap": "on",
   "[json]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1

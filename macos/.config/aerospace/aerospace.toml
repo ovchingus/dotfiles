@@ -159,6 +159,12 @@ cmd-shift-9 = ['move-node-to-workspace 9', 'workspace 9']
 if.app-id = 'com.apple.weather'
 run = ['layout floating']
 
+[[on-window-detected]]
+if.app-id = 'com.brave.Browser'
+if.window-title-regex-substring = 'Bitwarden'
+run = ['layout floating']
+check-further-callbacks = true
+
 ## Workspace 5 is work chats
 [[on-window-detected]]
 if.app-id = 'com.tdesktop.Telegram'
@@ -168,13 +174,16 @@ if.app-id = 'chat.strelka.desktop'
 run = ['move-node-to-workspace 5']
 
 ## Workspace 6 is calendar and mail
-# Uncomment for default Mail and Calendar apps
-# [[on-window-detected]]
-# if.app-id = 'com.apple.iCal'
-# run = ['move-node-to-workspace 6']
-# [[on-window-detected]]
-# if.app-id = 'chat.apple.mail'
-# run = ['move-node-to-workspace 6']
 [[on-window-detected]]
 if.app-id = 'org.mozilla.thunderbird'
 run = ['move-node-to-workspace 6']
+check-further-callbacks = true
+[[on-window-detected]]
+if.app-id = 'org.mozilla.thunderbird'
+if.window-title-regex-substring = 'Reminder'
+run = ['layout floating']
+check-further-callbacks = true
+[[on-window-detected]]
+if.app-id = 'org.mozilla.thunderbird'
+if.window-title-regex-substring = 'An error'
+run = ['layout floating']

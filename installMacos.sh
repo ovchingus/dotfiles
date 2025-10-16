@@ -7,6 +7,7 @@ mkdir -p "$TARGET_DIR/.config"
 stow -R -d ./shared -t "$TARGET_DIR/.config" .config
 stow -R -d ./shared -t "$TARGET_DIR" .
 stow -R -d ./macos -t "$TARGET_DIR/.config" .config
+stow -R -d ./macos -t "$TARGET_DIR/.docker" .docker
 stow -R -d ./macos -t "$TARGET_DIR" .
 
 ### Install brew packages with brew bundle
@@ -22,7 +23,9 @@ ln -sf "$HOME/.config/cursor/User/settings.json" ~/Library/Application\ Support/
 ln -sf "$HOME/.config/cursor/User/keybindings.json" ~/Library/Application\ Support/Cursor/User/keybindings.json
 
 ### Write mac settings
+defaults write -g ApplePressAndHoldEnabled -bool false
+# Aerospace https://nikitabobko.github.io/AeroSpace/guide#a-note-on-displays-have-separate-spaces
+defaults write com.apple.spaces spans-displays -bool true && killall SystemUIServer
 defaults write com.apple.dock autohide -bool true && killall Dock
 defaults write com.apple.dock autohide-delay -float 10000 && killall Dock
 defaults write com.apple.dock autohide-time-modifier -float 0.1 && killall Dock
-defaults write -g ApplePressAndHoldEnabled -bool false
