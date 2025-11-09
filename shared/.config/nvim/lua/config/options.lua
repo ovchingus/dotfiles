@@ -3,3 +3,4 @@
 -- Add any additional options here
 vim.g.snacks_animate = false
 vim.opt.clipboard = "unnamedplus"
+vim.opt.wrap = true
