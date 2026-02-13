@@ -3,6 +3,32 @@
 .zshenv
 
 shared/.config/tmux/plugins
+
+# Docker runtime files
+macos/.docker/.token_seed*
+macos/.docker/bin/
+macos/.docker/buildx/
+macos/.docker/cli-plugins/
+macos/.docker/contexts/
+macos/.docker/daemon.json
+macos/.docker/desktop-build/
+macos/.docker/gordon/
+macos/.docker/mcp/
+macos/.docker/models/
+macos/.docker/modules/
+macos/.docker/mutagen/
+macos/.docker/run/
+
+# karabiner mac
+macos/.config/karabiner/automatic_backups/
+
+# Editor backups
+*.bak
+shared/.config/zed/keymap.json.*.bak
+shared/.config/zed/settings_backup.json
 shared/.config/zed/prompts
 shared/.config/zed/conversations
+
+# Fish generated
+shared/.config/fish/conf.d/fish_frozen_*.fish
 fish_env

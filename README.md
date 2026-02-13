@@ -18,7 +18,7 @@ Required packages:
 
 - git
 - stow
-- brew (on MacOS)
+- brew (on macOS)
 
 1. Clone `dotfiles` directory to your user home directory.
 
@@ -27,14 +27,15 @@ Required packages:
    git clone https://github.com/ovchingus/dotfiles.git dotfiles
    ```
 
-2. Use stow to create symlinks in home directory
-Run `installMacos.sh` or `installArch.sh` to initialize configurations.
+2. Run the bootstrap script (auto-detects your OS).
 
    ```sh
-   cd .dotfiles
-   chmod +x installMacos.sh
-   ./installMacos.sh
+   cd dotfiles
+   chmod +x bootstrap.sh
+   ./bootstrap.sh
    ```
+
+The bootstrap script will automatically run `scripts/installMacos.sh` on macOS or `scripts/installArch.sh` on Linux.
 
 ## Arch settings
 

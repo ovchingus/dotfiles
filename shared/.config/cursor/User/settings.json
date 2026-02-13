@@ -1,39 +1,40 @@
 {
   "files.autoSave": "afterDelay",
-  "editor.fontSize": 15,
+  "editor.fontSize": 14,
   "editor.fontFamily": "'FiraCode Nerd Font', Menlo, Monaco, 'Courier New', monospace",
   "eslint.format.enable": true,
   "editor.formatOnSave": true,
   "editor.wordWrap": "on",
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "extensions.experimental.affinity": {
-    "asvetliakov.vscode-neovim": 1
+    "asvetliakov.vscode-neovim": 1,
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   },
   "terminal.external.osxExec": "Ghostty.app",
   "terminal.integrated.defaultProfile.osx": "fish",
-  "workbench.colorTheme": "Tokyo Night Storm",
+  "workbench.colorTheme": "Cursor Light",
   "workbench.iconTheme": "material-icon-theme",
   "material-icon-theme.activeIconPack": "none",
   "terminal.integrated.fontSize": 14,
   "editor.lineNumbers": "relative",
   "[typescript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   },
   "window.newWindowProfile": "Default",
   "material-icon-theme.folders.theme": "classic",
   "material-icon-theme.hidesExplorerArrows": true,
   "workbench.tree.indent": 14,
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "cursor.cpp.disabledLanguages": ["plaintext"]
+  "cursor.cpp.disabledLanguages": ["plaintext"],
+  "workbench.layoutControl.enabled": false,
 }

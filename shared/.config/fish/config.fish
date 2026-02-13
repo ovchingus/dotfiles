@@ -1,3 +1,9 @@
+if not test -f ~/.config/fish/fish_env
+    echo "Creating fish_env template..."
+    echo "# Add your environment variables here" > ~/.config/fish/fish_env
+    echo "# set -gx MY_VAR value" >> ~/.config/fish/fish_env
+end
+
 source ~/.config/fish/fish_env
 
 switch (uname)
